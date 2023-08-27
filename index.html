@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Wishes</title>
+<style>
+  body {
+    background-color: #ffd700; /* Background color: gold */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Box shadow for container */
+  }
+
+  h1 {
+    color: #ff3f1d; /* Reddish color for the heading */
+    font-size: 50px;
+    margin-bottom: 10px;
+    animation: bounceText 1s infinite alternate;
+  }
+
+  @keyframes bounceText {
+    0% {
+      transform: translateX(-90px);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }
+
+  p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .image {
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Box shadow for images */
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 3;
+    }
+  }
+
+  .animated {
+    animation: bounce 2s infinite;
+  }
+
+  .animated-rotate {
+    animation: rotate 3s infinite linear;
+  }
+
+  .animated-fadeIn {
+    animation: fadeIn 2s ease-in-out;
+  }
+  span{
+    color:#ff00aa;
+  }
+  
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Happy Birthday! <span>APPU</span></h1>
+  <p>Wishing you a day filled with joy, laughter, and wonderful memories.</p>
+  <p>May all your dreams and wishes come true in the coming year.</p>
+  <div class="image-container">
+    <img src="./img1.jpg" alt="Birthday Person 1" class="image animated">
+    <img src="./pngwing.com (15).png" alt="Cake" class="image animated animated-fadeIn">
+    <img src="./img3.jpeg" alt="Birthday Person 2" class="image animated">
+    <img src="./pngwing.com (15).png" alt="Party Hat" class="image animated animated-fadeIn">
+    <img src="./img4.jpeg" alt="Birthday Person 2" class="image animated">
+  </div>
+</div>
+</body>
+</html>
